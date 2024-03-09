@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find Lowest and Highest Values</title>
+</head>
+<body>
+  <h1>Find Lowest and Highest Values</h1>
+  
+  <label for="valuesInput">Enter decimal values (separated by spaces):</label>
+  <textarea id="valuesInput" rows="4" cols="50"></textarea>
+  <br>
+  <button onclick="calculateValues()">Calculate</button>
+  
+  <p>Lowest Value: <span id="lowestValue"></span></p>
+  <p>Highest Value: <span id="highestValue"></span></p>
+
+  <script>
+    function calculateValues() {
+      const valuesInput = document.getElementById('valuesInput').value;
+      const valuesArray = valuesInput.split(' ').map(value => parseFloat(value));
+      
+      if (valuesArray.some(isNaN)) {
+        alert("Please enter valid decimal values.");
+        return;
+      }
+      
+      const lowestValue = Math.min(...valuesArray);
+      const highestValue = Math.max(...valuesArray);
+
+      document.getElementById('lowestValue').textContent = lowestValue;
+      document.getElementById('highestValue').textContent = highestValue;
+    }
+  </script>
+</body>
+</html>
