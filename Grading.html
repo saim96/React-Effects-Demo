@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grading page</title>
+</head>
+<body>
+   <script>
+        // Write a program to input marks of five subjects 
+       // Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to
+
+//        var phy= 73;
+//        var mth= 40;
+//        var chem= 42;
+//        var bio= 59;
+//        var comp= 66;
+//        var sum= (phy+mth+chem+bio+comp);
+//        var prcnt= sum/500*100;
+//     //    console.log(prcnt);
+// if(prcnt>=90){
+//     console.log('Grade= A');
+// }else if(prcnt>=80){
+//     console.log('Grade= B');
+// }else if(prcnt>=70){
+//     console.log('Grade= C');
+// }else if(prcnt>=60){
+//     console.log('Grade= D');
+// }else if(prcnt>=50){
+//     console.log('Grade= E');
+// }else{
+//     console.log('Grade F');
+// }
+
+// Write a C program to check whether a number is negative, positive or zero.
+
+// var chk= -20;
+// if(chk<0){
+//     console.log('entered number is -ve');
+// }else if(chk==0){
+//     console.log('entered number is O')
+// }else{
+//     console.log('entered number is +ve')
+// }
+
+// Q4- Write a program to input any alphabet and check whether it is vowel
+
+// function result(){
+//     var alphabet= document.getElementById("alphb").value;
+//     if(alphabet=='a'||alphabet=='e'||alphabet=='i'||alphabet=='o'||alphabet=='u'){
+//         console.log('given alphabet is VOWEL');
+//     }else{
+//         console.log('given alphabet is Consonent');
+//     }
+
+// }
+
+// Q5 Write a C program to input any character and check whether it is alphabet, digit or special character.
+function checking(){
+    var charac= document.getElementById('charac').value;
+    if((charac>='A' && charac<='Z') || (charac >= 'a' && charac <= 'z')){
+        console.log('Alphabet');
+
+    }else if(charac >=0 && charac <=9){
+        console.log('Digit');
+    }else{
+        console.log('special character');
+    }
+    }
+
+   </script>
+   <style>
+
+   </style>
+   <html>
+       <!-- <label>Enter any alphabet</label>
+       <input id="alphb" type="text">
+       <button onclick="result()">ok</button> -->
+
+       <label>Enter any character(alphabet/digit/special character)</label>
+       <input id="charac" type="text">
+       <button onclick="checking()">Enter</button>
+    
+
+
+   </html>
+</body>
