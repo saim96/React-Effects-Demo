@@ -20,8 +20,8 @@ export default function Counter() {
 
   return (
     <div>
-      <h1>{count}</h1>
-      <button onClick={increment}>+1</button>
+      <h1 className="text-blue-500">{count}</h1>
+      <button className="bg-green-500 text-white px-4 py-2 rounded" onClick={increment}>+1</button>
       <p>Name: {name}</p>
       <input value={name} onChange={handleChange} type="text" />
     </div>

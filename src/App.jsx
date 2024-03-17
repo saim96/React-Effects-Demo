@@ -1,3 +1,4 @@
+import "./index.css";
 import "./App.css";
 import QuoteFetcher from "./QouteFetcher.component";
 import Counter from "./counter";
@@ -9,7 +10,7 @@ function App() {
     <>
       <ProfileViewerWithSearch />
       <hr />
-      <h1>Counter</h1>
+      <h1 >Counter</h1>
       <Counter />
       <hr />
       <QuoteFetcher />
