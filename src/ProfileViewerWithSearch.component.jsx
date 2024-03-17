@@ -29,9 +29,9 @@ export default function ProfileViewerWithSearch() {
   if (profile.isLoading) return <i>Loading..</i>;
 
   return (
-    <div>
+    <div className="bg-blue">
       <ProfileSearchForm searches={search} />
-      <b>{profile.data.name}</b>
+      <b >{profile.data.name}</b>
       <img src={profile.data.avatar_url}></img>
     </div>
   );
